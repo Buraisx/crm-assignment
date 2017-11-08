@@ -78,7 +78,7 @@ class CRM
     attrb = gets.chomp
     puts "Whats the value you want to search by?"
     value = gets.chomp
-    puts Contact.find_by(attrb, value)
+    puts "#{Contact.find_by(attrb, value)}"
   end
 
   def exit_program

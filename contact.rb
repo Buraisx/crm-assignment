@@ -85,15 +85,15 @@ class Contact
       case attribute
       when "first_name" then
         if contact.first_name == value
-            return contact
+            return contact.full_name
         end
       when "last_name" then
         if contact.last_name == value
-          return contact
+          return contact.full_name
         end
       when "email" then 
         if contact.email == value
-          return contact
+          return contact.full_name
         end
       end
     end
